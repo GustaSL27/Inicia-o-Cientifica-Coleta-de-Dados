@@ -1,6 +1,3 @@
-# repita os passos manuais, usando código
-# se sem conta: apertar pular na parte de login, selecionar data mes e ano, apertar em avançar, concordar com os termos
-# scrollar a aba de comentarios para carregar novos e repetir
 # https://www.tiktok.com/@plnacional_/video/7676218963205819656?q=bolsonaro&t=1792603634517
 
 from selenium import webdriver
