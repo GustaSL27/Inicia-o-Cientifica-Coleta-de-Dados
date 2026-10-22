@@ -23,8 +23,7 @@ def scroll_comentarios(driver):
     primeiro_comentario.click()
 
     for j in range(100):
-        driver.switch_to.active_element.send_keys(
-            Keys.PAGE_DOWN)  # envia pg down pro elemento "ativo" encontrado anteriormente (primeiro_comentario)
+        driver.switch_to.active_element.send_keys(Keys.PAGE_DOWN)  # envia pg down pro elemento "ativo" encontrado anteriormente (primeiro_comentario)
         print(f"Rolagem {j + 1}/100 feita.")
         sleep(1)
 
@@ -34,8 +33,7 @@ def coleta(driver):
 
     with open("comentarios4.txt", "a", encoding='utf-8') as comentarios_file:
         for i in range(len(comentarios)):
-            texto = comentarios[
-                i].text.strip()  # o .strip() "limpa" o comentario retirando espaços vazios antes e depois do comentario
+            texto = comentarios[i].text.strip()  # o .strip() "limpa" o comentario retirando espaços vazios antes e depois do comentario
             if texto:  # para se tiver linhas vazias não salvar
                 comentarios_file.write(f'{i + 1}- {texto}{os.linesep}')
 
