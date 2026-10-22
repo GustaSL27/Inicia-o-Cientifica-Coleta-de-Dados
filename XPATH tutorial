@@ -1,0 +1,4 @@
+//tag[@atributo='valor']
+//span[@style="color: var(--ui-text-1); font-size: 15px; font-weight: 478;"]
+
+usar isso con ctrl + f ao inspecionar elemento de uma página
