@@ -19,8 +19,7 @@ def abrir_video(url):
 def scroll_comentarios(driver):
     print("Começando a rolagem automatica dos comentarios")
 
-    primeiro_comentario = driver.find_element(By.XPATH,
-                                              "//span[@style='color: var(--ui-text-1); font-size: 15px; font-weight: 478;']")
+    primeiro_comentario = driver.find_element(By.XPATH, "//span[@style='color: var(--ui-text-1); font-size: 15px; font-weight: 478;']")
     primeiro_comentario.click()
 
     for j in range(100):
@@ -31,8 +30,7 @@ def scroll_comentarios(driver):
 
 # coletar e salva os comentarios
 def coleta(driver):
-    comentarios = driver.find_elements(By.XPATH,
-                                       "//span[@style='color: var(--ui-text-1); font-size: 15px; font-weight: 478;']")
+    comentarios = driver.find_elements(By.XPATH, "//span[@style='color: var(--ui-text-1); font-size: 15px; font-weight: 478;']")
 
     with open("comentarios4.txt", "a", encoding='utf-8') as comentarios_file:
         for i in range(len(comentarios)):
